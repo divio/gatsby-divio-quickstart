@@ -67,3 +67,10 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# used by the Divio CLI
+.divio
+/data.tar.gz
+
+# for local file storage
+/data
