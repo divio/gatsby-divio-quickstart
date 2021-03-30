@@ -1,3 +1,4 @@
+version: "2.4"
 services:
   web:
     # the application's web service (container) will use an image based on our Dockerfile
