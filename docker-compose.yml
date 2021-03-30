@@ -1,4 +1,3 @@
-version: "2.4"
 services:
   web:
     # the application's web service (container) will use an image based on our Dockerfile
@@ -7,9 +6,11 @@ services:
     ports:
       - "8000:80"
     # map the host directory to app (which allows us to see and edit files inside the container)
-    # volumes:
-    #   - ".:/app:rw"
-    #   - "./data:/data:rw"
+    volumes:
+      # uncomment if you prefer to perform node install/gatsby build operations on the host
+      # system - see the Divio Gatsby Quickstart how-to guide for an explanation
+      - ".:/app:rw"
+      - "./data:/data:rw"
     # the default command to run whenever the container is launched - this can be different from
     # the command built into the image
     command: gatsby develop --port 80 --host 0.0.0.0

@@ -10,7 +10,7 @@ WORKDIR /app
 # copy the repository files to it
 COPY . /app
 
-RUN npm install -g
+RUN npm install
 RUN npm install -g gatsby-cli
 
 RUN gatsby build
