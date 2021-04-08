@@ -10,7 +10,7 @@ services:
     volumes:
       # uncomment if you prefer to perform node install/gatsby build operations on the host
       # system - see the Divio Gatsby Quickstart how-to guide for an explanation
-      - ".:/app:rw"
+      # - ".:/app:rw"
       - "./data:/data:rw"
     # the default command to run whenever the container is launched - this can be different from
     # the command built into the image
